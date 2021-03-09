@@ -1,7 +1,9 @@
 # -*- coding: utf-8 -*-
+# autor: Arthur Coata Marcondes
+# email: arthur.marcondes@educaiguape.com.br
+# data: 12/02/2021
 
 import Tkinter as tk
-import time
 
 class Matematica():
     def __init__(self):
@@ -21,7 +23,9 @@ class Matematica():
 	self.can = tk.Canvas(self.root, width=480, height=100)
 	self.can.place(x=10, y=165)
 	
-	self.bt1 = tk.Button(self.root, text="Fração", width=4, bg="grey", fg="white", height=1, command = self.bt_click)
+	self.bt1 = tk.Button(self.root, text="Fração", width=4, 
+				bg="grey", fg="white", height=1, 
+				command = self.bt_click)
 	self.bt1.place(x=196, y=100)
 	
 	self.lb = tk.Label(self.root, text="Resultado")
@@ -31,24 +35,19 @@ class Matematica():
 	self.vermelho = "red"
 	self.azul = "lightBlue"
 	
-	 
-	
 	self.root.mainloop()
     
     def bt_click(self):
 	self.can.delete("all")
 	self.num1 = self.ed1.get()
 	self.num2 = self.ed2.get()
-	#print self.num1, self.num2
 	c = 50
 	
 	try:
 	    self.resultado = int(self.num1)-int(self.num2)
 	    numerador = float(self.num2)
 	    denominador = float(self.num1)
-	    #print "ok"
 	    self.lb["text"] = str(numerador/denominador)
-	    #print str(numerador/denominador)
 	    for r in range(int(self.num2)):
 		self.a = self.can.create_rectangle(0, 0, 20, 20, fill=self.vermelho)
 		self.can.move(self.a, c, 20)
@@ -58,14 +57,10 @@ class Matematica():
 		self.can.move(self.a, c, 20)
 		c = c+20
 	    
-	    
 	except:
 	    self.lb["text"] = "Erro"
 	    self.lb.configure(bg="grey", fg="white")
 	    self.lb.place(x=208, y=140)	    
             
-	    
-	
-
 	
 Matematica()
