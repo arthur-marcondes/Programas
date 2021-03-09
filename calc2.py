@@ -1,5 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
+# Author: Arthur Costa Marcondes
+# email: arthur.marcondes@educaiguape.com.br
+# git: htpps://github.com/arthur-marcondes/Programas
+# Date: 08/03/2021
+#----------------------------------------------------
+# Este programa pode ser compartilhado respeitando
+# os Direitos de não modificar o autor.
+#----------------------------------------------------
+
 
 import Tkinter as tk
 
