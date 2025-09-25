@@ -1,4 +1,16 @@
 public class Aula_2 {
+    public static void main(String[] args) {
+        var truck = 8;
+        var box = 112;
+        var units = 74;
+        var month = 30;
+
+        System.out.println(truck*box*month);
+
+    }
+
+
+
     // precisamos criar um método main para executar o código
     // o método main é o ponto de entrada do programa
     // Calcular a quantidade de caixas que entra num deposito
